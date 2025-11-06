@@ -1,0 +1,39 @@
+<stack class="container">
+    <div class="menu-button top-button" style="left: {{ topX }}px; top: {{ topY }}px;">
+        <image class="menu-icon" src="/icons/bolt.png"></image>
+    </div>
+
+    <div class="menu-button top-right-button" style="left: {{ topRightX }}px; top: {{ topRightY }}px;">
+        <image class="menu-icon" src="/icons/apps.png"></image>
+    </div>
+
+    <div class="menu-button right-button" style="left: {{ rightX }}px; top: {{ rightY }}px;">
+        <image class="menu-icon" src="/icons/key.png"></image>
+    </div>
+
+    <div class="menu-button bottom-right-button" style="left: {{ bottomRightX }}px; top: {{ bottomRightY }}px;">
+        <image class="menu-icon" src="/icons/home.png"></image>
+    </div>
+
+    <div class="menu-button bottom-button" style="left: {{ bottomX }}px; top: {{ bottomY }}px;">
+        <image class="menu-icon" src="/icons/star.png"></image>
+    </div>
+
+    <div class="menu-button bottom-left-button" style="left: {{ bottomLeftX }}px; top: {{ bottomLeftY }}px;">
+        <image class="menu-icon" src="/icons/open_in_new.png"></image>
+    </div>
+
+    <div class="menu-button left-button" style="left: {{ leftX }}px; top: {{ leftY }}px;">
+        <image class="menu-icon" src="/icons/settings.png"></image>
+    </div>
+
+    <div class="menu-button top-left-button" style="left: {{ topLeftX }}px; top: {{ topLeftY }}px;">
+        <image class="menu-icon" src="/icons/sync.png"></image>
+    </div>
+
+<!-- Center button -->
+    <div class="center-button" onclick="toggleMenu">
+        <image class="button-icon" src="/icons/menu.png" if="{{ !isOpen }}"></image>
+        <image class="button-icon" src="/icons/close.png" if="{{ isOpen }}"></image>
+    </div>
+</stack>

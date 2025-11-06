@@ -1,0 +1,72 @@
+/* Using fixed sizes for animations to work properly */
+.container {
+    width: 454px;
+    height: 454px;
+    background-color: black;
+}
+
+/* Center button - 100x100, center at: (177,177) */
+.center-button {
+    width: 100px;
+    height: 100px;
+    background-color: #ff333333;
+    border-radius: 50px;
+    left: 177px;
+    top: 177px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* Menu buttons around the center button */
+.menu-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icon {
+    width: 48px;
+    height: 48px;
+}
+
+/* Colors for menu buttons */
+.top-button {
+    background-color: #ff4caf50;
+}
+
+.top-right-button {
+    background-color: #ff9c27b0;
+}
+
+.right-button {
+    background-color: #ffe91e63;
+}
+
+.bottom-right-button {
+    background-color: #ffff5722;
+}
+
+.bottom-button {
+    background-color: #ffff9800;
+}
+
+.bottom-left-button {
+    background-color: #ffffc107;
+}
+
+.left-button {
+    background-color: #ff2196f3;
+}
+
+.top-left-button {
+    background-color: #ff00bcd4;
+}
