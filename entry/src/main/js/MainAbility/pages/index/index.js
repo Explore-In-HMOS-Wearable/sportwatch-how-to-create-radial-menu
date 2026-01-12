@@ -3,7 +3,7 @@ export default {
         isOpen: false,
         isAnimating: false,
 
-        // Button positions - Starting at center, (187,187) for 80x80 size
+        
         topX: 187,
         topY: 187,
         rightX: 187,
@@ -19,7 +19,7 @@ export default {
         bottomLeftX: 187,
         bottomLeftY: 187,
         topLeftX: 187,
-        topLeftY: 187,
+        topLeftY: 187
     },
 
     onInit() {
@@ -50,19 +50,19 @@ export default {
     },
 
     animateButtons(fromPos, toPos, easingType) {
-        var that = this
+        const that = this
         this.isAnimating = true
 
-        var duration = 300
-        var fps = 60
-        var frames = Math.round(duration / (1000 / fps))
-        var currentFrame = 0
+        const duration = 300
+        const fps = 60
+        const frames = Math.round(duration / (1000 / fps))
+        const currentFrame = 0
 
-        var animationInterval = setInterval(function () {
+        const animationInterval = setInterval(function () {
             currentFrame++
 
             if (currentFrame >= frames) {
-                // Animation complete, snap to final pos
+                
                 Object.keys(toPos).forEach(function (key) {
                     that[key] = toPos[key]
                 })
@@ -70,9 +70,9 @@ export default {
                 clearInterval(animationInterval)
                 console.info((that.isOpen ? 'Open' : 'Close') + ' animation complete')
             } else {
-                // Calculate progress with easing
-                var progress = currentFrame / frames
-                var eased = easingType === 'ease-out'
+                
+                const progress = currentFrame / frames
+                const eased = easingType === 'ease-out'
                     ? 1 - Math.pow(1 - progress, 3) // cubic ease out
                     : Math.pow(progress, 3)         // cubic ease-in
 
@@ -84,10 +84,9 @@ export default {
     },
 
     getOpenPositions() {
-        // distance from center = 140px
-        // 8 buttons at 45 degree intervals, diagonal offset = 140 * cos(45), roughly 99
-        var radius = 140
-        var diagonalOffset = 99
+        
+        const radius = 140
+        const diagonalOffset = 99
 
         return {
             topX: 187,
@@ -99,7 +98,7 @@ export default {
             leftX: 187 - radius,
             leftY: 187,
 
-            // Diagonals
+            
             topRightX: 187 + diagonalOffset,
             topRightY: 187 - diagonalOffset,
             bottomRightX: 187 + diagonalOffset,
@@ -107,7 +106,7 @@ export default {
             bottomLeftX: 187 - diagonalOffset,
             bottomLeftY: 187 + diagonalOffset,
             topLeftX: 187 - diagonalOffset,
-            topLeftY: 187 - diagonalOffset,
+            topLeftY: 187 - diagonalOffset
         }
     },
 
@@ -128,7 +127,7 @@ export default {
             bottomLeftX: 187,
             bottomLeftY: 187,
             topLeftX: 187,
-            topLeftY: 187,
+            topLeftY: 187
         }
     }
 }

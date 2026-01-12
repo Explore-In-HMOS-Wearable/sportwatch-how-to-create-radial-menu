@@ -4,24 +4,29 @@
 
 HarmonyOS application that showing how a Radial Menu can be implemented on lite wearable devices.
 
+# Preview
+
 <div>
-    <img src="screenshots/output.png" width="25%" />
-    <img src="screenshots/outputOpen.png" width="25%"/>
+
+<img src="screenshots/output.png" width="25%" />
+
+<img src="screenshots/outputOpen.png" width="25%"/>
+
 </div>
 
-# **Use Cases**
+# Use Cases
 
 * A user can open the Radial Menu with a button press to quickly switch between frequently used apps on their smartwatch.
 * The Radial Menu allows users to access and adjust key smartwatch settings like brightness, volume, and notifications with a single button press.
 
 
-# **Tech Stack**
+# Tech Stack
 
 * **Languages**: JS
 * **Frameworks**: HarmonyOS SDK 5.0.0(12)
 * **Tools**: DevEco Studio Vers 5.1.0
 
-# **Directory Structure**
+# Directory Structure
 
 
 ```
@@ -37,7 +42,9 @@ entry/src/main/js/MainAbility
 └──  app.js #Constraints and Restrictions
 ```
 
-# **Supported Devices** 
+# Constraints and Restrictions
+
+## Supported Devices
 
 - Huawei Sport (Lite) Watch GT 4/5/6
 - Huawei Sport (Lite) GT4/5 Pro
@@ -45,7 +52,7 @@ entry/src/main/js/MainAbility
 - Huawei Sport (Lite) D2
 - Huawei Sport (Lite) Ultimate
 
-# **License**
+# License
 
 
 
